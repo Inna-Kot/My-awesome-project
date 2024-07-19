@@ -3,9 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>My weather application</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <header>
+      <form>
+        <input
+          class="search-input"
+          type="search"
+          placeholder="Enter a city.."
+          required />
+        <input class="search-button" type="submit" value="Search" />
+      </form>
+    </header>
+    <main>
+      <div class="current-weather">
+        <div>
+          <h1 class="current-city">Paris</h1>
+          <p class="current-details">
+            Saturday 15:32, moderate rain <br />
+            Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+          </p>
+        </div>
+        <div class="current-temperature">
+          <span class="current-temperature-emoji">☀️</span>14<span
+            class="current-temperature-unit"
+            >°C</span
+          >
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        This project was coded by
+        <a href="#" target="_blank">Your name</a> and is
+        <a href="#" target="_blank"> on GitHub</a> and
+        <a href="#" target="_blank">hosted on Netlify</a>
+      </p>
+    </footer>
   </body>
 </html>
